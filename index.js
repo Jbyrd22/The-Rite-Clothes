@@ -12,6 +12,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieSession({ keys: [ process.env.PASSPHRASE ] }));
 app.use(authRouter);
 
+app.set('view engine', 'ejs');
+
 app.listen(3000, () => {
 	console.log('TheRiteClothes App Has Started');
 });

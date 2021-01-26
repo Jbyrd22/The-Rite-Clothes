@@ -2,8 +2,8 @@ const express = require('express');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-	res.send('this is the sign in page');
+router.get('/signup', (req, res) => {
+	res.render('admin/signUp');
 });
 
 module.exports = router;
